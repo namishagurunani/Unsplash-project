@@ -1,72 +1,43 @@
 
-.section1{
-  height: 55vh;
+.section{
   display: flex;
   justify-content: top;
   align-items: center;
   flex-direction: column;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 .heading{
-  font-family: 'Luckiest Guy', sans-serif;
   font-size: 10rem;
   color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-  background-image: url(./Components/images/img1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #ea8282, -1px 1px 0 #cabfbf, 1px 1px 0 #ffd8d8;
   animation: image_change 15s alternate infinite ease-in-out;
-}
-@keyframes image_change {
-  
-  0%{
-      background-image: url(./Components/images/img2.jpg);
-  }
-  50%{
-      background-image: url(./Components/images/img3.jpg);
-  }
-  100%{
-      background-image: url(./Components/images/img4.jpg);
-  }
+  font-family: 'Luckiest Guy', sans-serif;
 }
 
-.subheading{
-  color: #DBDBDB;
-  font-size: 3rem;
-}
 .container{
   max-width: 80%;
   margin: auto;
   text-align: center;
 }
 
-
 form{
   display: flex;
-  margin-top: 30px;
   gap: 1rem;
   position: relative;
-
 }
 #search-img{
-  height: 50px;
-  width: 500px;
+  padding: 10px 20px;
   background: transparent;
-  border-radius: 5px;
+  border-radius: 2px;
   padding-left: 45px;
   box-shadow: inset 0 8px 60px rgba(229, 218, 241, 0.1),
               inset 0 8px 8px rgba(225, 217, 234, 0.1),
               inset 0 -4px 4px rgba(217, 209, 225, 0.1);
-  border: 1px solid gray;
+  border: 1px solid rgb(235, 130, 130);
   font-size: 20px;
   transform: translateY(-2px);
   outline: none;
   color: white;
-
 } 
 form i{
   color: white;
@@ -126,6 +97,17 @@ form i{
   cursor: pointer;
   border-radius: 5px;
 }
+button{
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: rgb(222, 175, 175);
+  border: none;
+  border-radius: 2px;
+ 
+}
+button:hover{
+  background-color: rgb(237, 204, 204);
+}
 .images img{
   width: 100%;
   border-radius: 5px;
@@ -133,7 +115,7 @@ form i{
 @media screen and (max-width:1025px)  {
   .heading{
     text-align: center;
-    font-size: 8rem;
+    font-size: 6rem;
   }
   .section1{
     text-align: center;
@@ -143,11 +125,11 @@ form i{
 
 @media screen and (max-width:769px)  {
   .gallery{
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
   .heading{
     text-align: center;
-    font-size: 7rem;
+    font-size: 3.4rem;
   }
   .section1{
     text-align: center;
@@ -157,11 +139,11 @@ form i{
 
 @media screen and (max-width:426px)  {
   .gallery{
-    margin-top: 12rem;
+    margin-top: 6rem;
   }
   .heading{
     text-align: center;
-    font-size: 6rem;
+    font-size: 2rem;
     margin-left: 50px;
   }
   .section1{
