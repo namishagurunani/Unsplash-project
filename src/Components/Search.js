@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState,useEffect } from "react";
 function Search(props) {
-  function SearchTheImage(e){
+  function searchTheImage(e){
     e.preventDefault();
     props.setprevSearch(props.searchTerm)
     let result=e.target.children[1].value;
@@ -10,12 +10,12 @@ function Search(props) {
   }
   return (
     <div class="section">
-      <form action="" onSubmit={SearchTheImage}>
+      <form action="" onSubmit={searchTheImage}>
         <i class="uil uil-search"></i>
         <input type="text" placeholder="Search Images" id="search-img"  />
         <button class="search">Search</button>
       </form>
-      <h1 class="heading">FLASH0GRAPHY</h1>
+      <h1 class="title">FLASH0GRAPHY</h1>
     </div>
   );
 }

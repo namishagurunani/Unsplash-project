@@ -34,12 +34,12 @@ function App() {
             setData((prev)=>[...prev,...res.data.results]);
           }
           else{
-            console.log("Hiiiiiiiiiii");
+            console.log("hello world");
             setData(res.data.results);
           }
         }
-      } catch (err) {
-        console.log("Error in fetching Data: ", err);
+      } catch (error) {
+        console.log("Error in fetching Data: ", error);
       }
     };
     fetchData();
@@ -48,11 +48,11 @@ function App() {
  function HandlingInfiniteScroll(){
     try{
       if((document.documentElement.scrollTop+document.documentElement.clientHeight+1)>=document.documentElement.scrollHeight){
-        setPageCount((prv)=>prv+1);
+        setPageCount((prev)=>prev+1);
       }
     }
-    catch(err){
-      console.log("NextPage",err);
+    catch(error){
+      console.log("NextPage",error);
     }
   }
   useEffect(()=>{
@@ -71,19 +71,19 @@ function App() {
       <div className="gallery">
         <ul className="images">
           {
-            getData.map((ele) => {
+            getData.map((e) => {
               return (
                 <li class="card">
-                  <img src={ele.urls.small} loading="lazy" alt="" />
+                  <img src={e.urls.small} loading="lazy" alt="" />
                   <div class="details">
                     <div class="photographer">
-                      <span>{ele.user.first_name}</span>
+                      <span>{e.user.first_name}</span>
                       {
                       
-                        ((ele.alt_description).length<50)? <span>{ele.alt_description}</span>:
+                        ((e.alt_description).length<50)? <span>{e.alt_description}</span>:
                         <span></span>
                       }                    
-                      <span>{ele.created_at}</span>
+                      <span>{e.created_at}</span>
                     </div>
                   </div>
                 </li>

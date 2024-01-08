@@ -6,7 +6,7 @@
   flex-direction: column;
   margin-top: 3rem;
 }
-.heading{
+.title{
   font-size: 10rem;
   color: transparent;
   text-shadow: -1px -1px 0 #000000, 1px -1px 0 #ea8282, -1px 1px 0 #cabfbf, 1px 1px 0 #ffd8d8;
@@ -113,7 +113,7 @@ button:hover{
   border-radius: 5px;
 }
 @media screen and (max-width:1025px)  {
-  .heading{
+  .title{
     text-align: center;
     font-size: 6rem;
   }
@@ -127,7 +127,7 @@ button:hover{
   .gallery{
     margin-top: 1rem;
   }
-  .heading{
+  .title{
     text-align: center;
     font-size: 3.4rem;
   }
@@ -141,7 +141,7 @@ button:hover{
   .gallery{
     margin-top: 6rem;
   }
-  .heading{
+  .title{
     text-align: center;
     font-size: 2rem;
     margin-left: 50px;
